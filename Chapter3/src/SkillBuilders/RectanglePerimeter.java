@@ -20,5 +20,4 @@ public class RectanglePerimeter {
 		System.out.print("The area of the retangle is: " + area);
 		
 	}
-
 }
