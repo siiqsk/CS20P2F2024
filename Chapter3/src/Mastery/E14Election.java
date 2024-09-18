@@ -11,20 +11,39 @@ public class E14Election {
 		
 		DecimalFormat shorten = new DecimalFormat("#00.00");
 		
-		int yorka = 314159;
-		int yorkm = 271860;
-		int jerseya = 89008;
-		int jerseym = 121032;
-		int connecta = 213451;
-		int connectm = 231034;
+		System.out.println("Welcome to the election results window");
+		System.out.println(" ");
+		
+		Scanner userInput = new Scanner(System.in);
+		
+		System.out.println("Please enter the total # of votors for Awbrey in...");
+				
+		System.out.print("NewYork: ");
+		int yorka = userInput.nextInt();
+		
+		System.out.print("NewJersey: ");
+		int jerseya = userInput.nextInt();
+		
+		System.out.print("Connecticut: ");
+		int connecta = userInput.nextInt();
+		
+		System.out.println(" ");
+		System.out.println("Please enter the total # of votors for Martinez in...");
+		
+		System.out.print("NewYork: ");
+		int yorkm = userInput.nextInt();
+		
+		System.out.print("NewJersey: ");
+		int jerseym = userInput.nextInt();
+		
+		System.out.print("Connecticut: ");
+		int connectm = userInput.nextInt();
+		
 		
 		double awbrey = yorka + jerseya + connecta;
 		double martinez = yorkm + jerseym + connectm;
 		
-		System.out.println("Welcome to the election results window");
-		Scanner userInput = new Scanner(System.in);
-		System.out.println("Please enter anything to view recent election results: ");
-		String placemat = userInput.next();
+		
 		
 		System.out.println(" ");
 		
@@ -46,7 +65,7 @@ public class E14Election {
 		
 		System.out.println(" ");
 		
-		System.out.println("Candidate          Votes   Percentage");
+		System.out.println("Candidate           Votes   Percentage");
 		System.out.println("Awbrey:           " + (int)awbrey + "   "+ shorten.format((awbrey/(awbrey + martinez))*100) + "%");
 		System.out.println("Martinez:         " + (int)martinez + "   "+ shorten.format((martinez/(awbrey + martinez))*100) + "%");	
 		System.out.println("TOTAL VOTES:     " + (int)(awbrey + martinez));	
