@@ -16,16 +16,16 @@ public class GuessingGame {
 		System.out.print("Please enter a number between 1-20: "); 
 		int usernum = input.nextInt();
 		
-		System.out.print("Your guess: " + usernum); 
-		System.out.print("Secret number: " + secret); 
+		System.out.println("Your guess: " + usernum); 
+		System.out.println("Secret number: " + secret); 
 		
 		if (secret == usernum) {
 			System.out.print("You won!"); 
 		}
 		
-		System.out.print(secret);
-		
-		
+		else {
+			System.out.println("Better luck next time.");
+		}
 
 	}
 

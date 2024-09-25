@@ -2,11 +2,14 @@
 
 package Mastery;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class MathTutor {
 
 	public static void main(String[] args) {
+		
+		DecimalFormat shorten = new DecimalFormat("#00.00");
 		
 		System.out.println("Welcome to the Math Tutor Application ");
 		System.out.println(" ");
@@ -48,8 +51,8 @@ public class MathTutor {
 		
 		System.out.println(" ");
 		
-		System.out.println("(Your answer: " + useranswer + ")");
-		System.out.println("(Correct answer: " + answer + ")");
+		System.out.println("(Your answer: " + shorten.format(useranswer) + ")");
+		System.out.println("(Correct answer: " + shorten.format(answer) + ")");
 		
 		
 	}
