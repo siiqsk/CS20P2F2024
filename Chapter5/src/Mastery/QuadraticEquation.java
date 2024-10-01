@@ -68,13 +68,6 @@ The roots are 00.93 and -00.75
 
 Test Case 2:
 
-Welcome to the Quadratic Equation Application 
- 
-Please enter a value for a: 2
-Please enter a value for b: 4
-Please enter a value for c: -30
- 
-The roots are 03.00 and -05.00
 
 
 
