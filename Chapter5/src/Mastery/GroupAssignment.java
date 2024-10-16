@@ -41,7 +41,7 @@ public class GroupAssignment {
 		
 		switch (Character.toString(inital).toUpperCase()) {
 		
-		case "A", "B", "C","D","E","F","G","H","I": System.out.println(firstName + " " + lastName +" is assigned to Group 1"); break;
+		case "A","B","C","D","E","F","G","H","I": System.out.println(firstName + " " + lastName +" is assigned to Group 1"); break;
 		case "J","K","L","M","N","O","P","Q","R","S": System.out.println(firstName + " " + lastName +" is assigned to Group 2"); break;
 		case "T","U","V","w","X","Y","Z": System.out.println(firstName + " " + lastName +" is assigned to Group 3"); break;
 		
