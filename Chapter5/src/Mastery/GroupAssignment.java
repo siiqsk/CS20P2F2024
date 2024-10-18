@@ -27,18 +27,21 @@ public class GroupAssignment {
 		//Preparing for user input
 		Scanner input = new Scanner(System.in);
 		
-		//Prompt user for user's guess and record user input
+		//Prompt user for first name and record user input
 		System.out.print("Please enter your first name: ");
 		String firstName = input.next();
 		
+		//Prompt user for last name and record user input
 		System.out.print("Please enter your last name: ");
 		String lastName = input.next();
 	
 		System.out.println(""); 
 		
+		//Take first letter of last name as a char
 		char inital = lastName.charAt(0);
-	
 		
+		//Type-cast char initial variable into string, and convert into upper-case for comparison
+		//Determine which group initial belongs in (matches which switch case), and output group number to user.
 		switch (Character.toString(inital).toUpperCase()) {
 		
 		case "A","B","C","D","E","F","G","H","I": System.out.println(firstName + " " + lastName +" is assigned to Group 1"); break;
